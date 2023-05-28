@@ -1,0 +1,48 @@
+html, body {
+  cursor: crosshair;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  overflow: hidden;
+  text-overflow: clip;
+
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+@keyframes fade-in {
+    from {
+      opacity: 0.0;
+    }
+    to {
+      opacity: 1.0;
+    }
+}
+
+@keyframes card-from-top {
+    from {
+      transform: rotateZ(120deg);
+      bottom: 100rem;
+    }
+}
+
+@keyframes from-top-timeline {
+  from {
+    top: -20rem;
+  }
+  to {
+    top: 0rem;
+  }
+}
+
+@keyframes from-bottom-timeline {
+  from {
+    top: 30rem;
+  }
+  to {
+    top: 20rem;
+  }
+}

@@ -1,0 +1,238 @@
+@import "./media-styles/small-devices.less";
+
+#landing-page-container {
+  background-image: url('/assets/images/wallpaper_landing.png');
+  background-position: left;
+  background-size: cover;
+
+  margin: auto;
+
+  position:relative;
+  top: 5%;
+
+  width: calc(100% - 10rem);
+  max-width: 60rem;
+  height: calc(100% - 10rem);
+
+  border-style: solid;
+
+  animation-name: fade-in;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
+
+  transition: width, height, top, ease-in 0.50s;
+}
+
+.business-card-component {
+  position: absolute;
+  bottom: -10rem;
+  right: calc(25% - 25rem);
+}
+
+.hand-image-container {
+  width: 30rem;
+}
+
+.hand-image {
+  width: 100%;
+}
+
+#card {
+  width: 16rem;
+  height: 10rem;
+
+  z-index: 2;
+
+  bottom: 18rem;
+  right: calc(25% - 2rem);
+
+  background-color: #000000;
+  background-image: url("/assets/images/cardstock_texture.png");
+  background-size: cover;
+  border-radius: 2px;
+
+  transition: transform, ease-in-out, 0.25s;
+
+  animation-name: card-from-top;
+  animation-duration: 0.5s;
+
+  transform: rotateZ(2deg);
+}
+
+#card:hover {
+  transform: rotateZ(-2deg);
+  cursor: pointer;
+}
+
+#card-back {
+  width: 16rem;
+  height: 10rem;
+
+  z-index: 2;
+  bottom: 18rem;
+  right: calc(25% - 2rem);
+
+  background-color: #000000;
+  transition: transform, ease-in-out, 0.25s;
+
+  background-image: url("/assets/images/collaage.jpg");
+  background-size: cover;
+
+  border-radius: 2px;
+
+  transform: rotateZ(-2deg);
+}
+
+#card-back-inner-container {
+  border-style: solid;
+  border-radius: 15px;
+  background-color: #ffff00;
+
+  border-color: #ff00ff;
+
+  margin: auto;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  margin-top: 0.5rem;
+
+  height: calc(100% - 1rem);
+}
+
+#card-back:hover {
+  transform: rotateZ(2deg);
+}
+
+#card-header {
+  font-family: Arial;
+  font-weight: lighter;
+
+  padding: 0px;
+  padding-left: 1rem;
+
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+
+#card-inner-container {
+  border-style: solid;
+  border-radius: 15px;
+
+  border-color: #ffffff;
+
+  margin: auto;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  margin-top: 0.5rem;
+
+  height: calc(100% - 1rem);
+}
+
+.card-list-item {
+  color: #ffffff;
+  display: block;
+  font-family: Arial;
+  margin-left: 1rem;
+  font-style: italic;
+  font-size: 0.75rem;
+}
+
+.card-back-list-item {
+  color: #000000;
+  display: block;
+  font-family: Arial;
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+  font-style: bold;
+  font-size: 1rem;
+}
+
+#hand {
+  z-index: 1;
+}
+
+#thumb {
+  z-index: 3;
+}
+
+#location-tag {
+  font-size: 11px;
+  font-family: monospace;
+
+  position: absolute;
+  bottom: -1rem;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100rem;
+}
+
+#icons-tag {
+  font-size: 11px;
+  font-family: monospace;
+
+  position: absolute;
+  top: 15.5rem;
+  right: -16rem;
+
+  transform: rotateZ(90deg);
+}
+
+.card-back-sticker-image-container {
+  width: 3rem;
+  height: 2.5rem;
+
+  margin-left: 0.5rem;
+  margin-top: 1rem;
+
+  float: left;
+
+  position: absolute;
+  z-index: 10;
+}
+
+.card-back-sticker-image-container:hover {
+  opacity: 0.5;
+}
+
+.card-back-sticker-image {
+  width: 100%;
+}
+
+#rotate-icon {
+  width: 1.5rem;
+
+  position: absolute;
+  right: -1.5rem;
+  top: -1.5rem;
+
+  transform: rotateZ(-45deg);
+}
+
+#rotate-icon-image {
+  width: 100%;
+}
+
+#qr-code-facade {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: #000000;
+  z-index: 999;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#qr-image-container {
+  width: 50%;
+  max-width: 25rem;
+}
+
+#qr-image {
+  width: 100%;
+}
